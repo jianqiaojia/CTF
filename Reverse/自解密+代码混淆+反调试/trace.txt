@@ -1,0 +1,1005 @@
+Thread  	Address                 	Instruction                     	Result                                  	
+000022D8	[vdso]:F7F39549         	Memory layout changed: 40 segments	Memory layout changed: 40 segments      	
+000022D8	                        	                                	EAX=FFFFFE00 EBX=00000000 ECX=099F51A0 EDX=00000400 ESI=F7F22000 EDI=F7F20A60 EBP=FF9AAC98 ESP=FF9AAC20 EFL=00000246 CS=0023 DS=002B ES=002B FS=0000 GS=0063 SS=002B ST0=FFFFFFFFFFFFFFFF ST1=FFFFFFFFFFFFFFFF ST2=FFFFFFFFFFFFFFFF ST3=FFFFFFFFFFFFFFFF ST4=FFFFFFFFFFFFFFFF ST5=FFFFFFFFFFFFFFFF ST6=FFFFFFFFFFFFFFFF ST7=FFFFFFFFFFFFFFFF CTRL=FFFF MM0= MM1= MM2= MM3= MM4= MM5= MM6= MM7= XMM0= XMM1= XMM2= XMM3= XMM4= XMM5= XMM6= XMM7= MXCSR=FFFFFFFF YMM0= YMM1= YMM2= YMM3=	
+000022D8	[vdso]:F7F39549         	pop     ebp                     	EAX=00000004 ESP=FF9AAC24               	
+000022D8	[vdso]:F7F3954A         	pop     edx                     	ESP=FF9AAC28                            	
+000022D8	[vdso]:F7F3954B         	pop     ecx                     	ESP=FF9AAC2C                            	
+000022D8	[vdso]:F7F3954C         	retn                            	ESP=FF9AAC30                            	
+000022D8	libc.so.6:read+37       	cmp     eax, 0FFFFF000h         	CF=1 PF=0 ZF=0                          	
+000022D8	libc.so.6:read+3C       	ja      short loc_F7E02240      	                                        	
+000022D8	libc.so.6:loc_F7E021EE  	add     esp, 10h                	ESP=FF9AAC40 CF=0 SF=1                  	
+000022D8	libc.so.6:read+41       	pop     ebx                     	EBX=F7F203A0 ESP=FF9AAC44               	
+000022D8	libc.so.6:read+42       	pop     esi                     	ESI=F7F22620 ESP=FF9AAC48               	
+000022D8	libc.so.6:read+43       	pop     edi                     	ESP=FF9AAC4C                            	
+000022D8	libc.so.6:read+44       	retn                            	ESP=FF9AAC50                            	
+000022D8	libc.so.6:_IO_file_underflow+176	add     esp, 10h                	ESP=FF9AAC60 PF=1                       	
+000022D8	libc.so.6:_IO_file_underflow+179	test    eax, eax                	PF=0 SF=0                               	
+000022D8	libc.so.6:_IO_file_underflow+17B	jle     short loc_F7D768C0      	                                        	
+000022D8	libc.so.6:_IO_file_underflow+17D	mov     ebx, [esi+50h]          	EBX=FFFFFFFF                            	
+000022D8	libc.so.6:_IO_file_underflow+180	mov     ecx, [esi+4Ch]          	ECX=FFFFFFFF                            	
+000022D8	libc.so.6:_IO_file_underflow+183	add     [esi+8], eax            	                                        	
+000022D8	libc.so.6:_IO_file_underflow+186	mov     edx, ebx                	EDX=FFFFFFFF                            	
+000022D8	libc.so.6:_IO_file_underflow+188	and     edx, ecx                	PF=1 SF=1                               	
+000022D8	libc.so.6:_IO_file_underflow+18A	cmp     edx, 0FFFFFFFFh         	ZF=1 SF=0                               	
+000022D8	libc.so.6:_IO_file_underflow+18D	jz      short loc_F7D7689A      	                                        	
+000022D8	libc.so.6:loc_F7D7689A  	mov     eax, [esi+4]            	EAX=099F51A0                            	
+000022D8	libc.so.6:_IO_file_underflow+19D	movzx   eax, byte ptr [eax]     	EAX=00000031                            	
+000022D8	libc.so.6:_IO_file_underflow+1A0	lea     esp, [ebp-0Ch]          	ESP=FF9AAC8C                            	
+000022D8	libc.so.6:_IO_file_underflow+1A3	pop     ebx                     	EBX=F7F22620 ESP=FF9AAC90               	
+000022D8	libc.so.6:_IO_file_underflow+1A4	pop     esi                     	ESI=F7F20A60 ESP=FF9AAC94               	
+000022D8	libc.so.6:_IO_file_underflow+1A5	pop     edi                     	EDI=F7F22C60 ESP=FF9AAC98               	
+000022D8	libc.so.6:_IO_file_underflow+1A6	pop     ebp                     	EBP=FF9AB2F8 ESP=FF9AAC9C               	
+000022D8	libc.so.6:_IO_file_underflow+1A7	retn                            	ESP=FF9AACA0                            	
+000022D8	libc.so.6:_IO_default_uflow+40	add     esp, 10h                	ESP=FF9AACB0 PF=0 ZF=0 SF=1             	
+000022D8	libc.so.6:_IO_default_uflow+43	cmp     eax, 0FFFFFFFFh         	CF=1 AF=1 SF=0                          	
+000022D8	libc.so.6:_IO_default_uflow+46	jz      short loc_F7D77A44      	                                        	
+000022D8	libc.so.6:_IO_default_uflow+48	mov     eax, [ebx+4]            	EAX=099F51A0                            	
+000022D8	libc.so.6:_IO_default_uflow+4B	lea     edx, [eax+1]            	EDX=099F51A1                            	
+000022D8	libc.so.6:_IO_default_uflow+4E	mov     [ebx+4], edx            	                                        	
+000022D8	libc.so.6:_IO_default_uflow+51	movzx   eax, byte ptr [eax]     	EAX=00000031                            	
+000022D8	libc.so.6:loc_F7D77A44  	add     esp, 4                  	ESP=FF9AACB4 CF=0 PF=1 AF=0 SF=1        	
+000022D8	libc.so.6:_IO_default_uflow+57	pop     ebx                     	ESP=FF9AACB8                            	
+000022D8	libc.so.6:_IO_default_uflow+58	pop     esi                     	ESI=00000000 ESP=FF9AACBC               	
+000022D8	libc.so.6:_IO_default_uflow+59	retn                            	ESP=FF9AACC0                            	
+000022D8	libc.so.6:psiginfo+1089 	add     esp, 10h                	ESP=FF9AACD0 PF=0                       	
+000022D8	libc.so.6:psiginfo+108C 	cmp     eax, 0FFFFFFFFh         	CF=1 AF=1 SF=0                          	
+000022D8	libc.so.6:psiginfo+108F 	jnz     loc_F7D51E35            	                                        	
+000022D8	libc.so.6:loc_F7D51E35  	mov     ecx, [edi+34h]          	ECX=F7E9C380                            	
+000022D8	libc.so.6:psiginfo+FD8  	lea     edx, [eax+eax]          	EDX=00000062                            	
+000022D8	libc.so.6:psiginfo+FDB  	add     esi, 1                  	ESI=00000001 CF=0 AF=0                  	
+000022D8	libc.so.6:psiginfo+FDE  	movzx   edx, word ptr [ecx+edx] 	EDX=0000D808                            	
+000022D8	libc.so.6:psiginfo+FE2  	and     dh, 20h                 	EDX=00000008 PF=1 ZF=1                  	
+000022D8	libc.so.6:psiginfo+FE5  	jz      short loc_F7D51E7A      	                                        	
+000022D8	libc.so.6:loc_F7D51E7A  	mov     edi, [ebp-5B4h]         	EDI=00000000                            	
+000022D8	libc.so.6:psiginfo+1020 	mov     ecx, large gs:0         	ECX=F7F34500                            	
+000022D8	libc.so.6:psiginfo+1027 	mov     [ebp-5A0h], eax         	                                        	
+000022D8	libc.so.6:psiginfo+102D 	mov     edx, [ebp-5A8h]         	EDX=FFFFFFB4                            	
+000022D8	libc.so.6:psiginfo+1033 	movzx   ebx, byte ptr [ebp-5B0h]	EBX=00000073                            	
+000022D8	libc.so.6:psiginfo+103A 	mov     [ecx+edx], edi          	                                        	
+000022D8	libc.so.6:psiginfo+103D 	cmp     eax, 0FFFFFFFFh         	CF=1 PF=0 AF=1 ZF=0                     	
+000022D8	libc.so.6:psiginfo+1040 	jz      loc_F7D5246E            	                                        	
+000022D8	libc.so.6:psiginfo+1046 	sub     esp, 8                  	ESP=FF9AACC8 CF=0 SF=1                  	
+000022D8	libc.so.6:psiginfo+1049 	movzx   eax, al                 	                                        	
+000022D8	libc.so.6:psiginfo+104C 	sub     esi, 1                  	ESI=00000000 PF=1 AF=0 ZF=1 SF=0        	
+000022D8	libc.so.6:psiginfo+104F 	push    eax                     	ESP=FF9AACC4                            	
+000022D8	libc.so.6:psiginfo+1050 	push    dword ptr [ebp-5C0h]    	ESP=FF9AACC0                            	
+000022D8	libc.so.6:psiginfo+1056 	call    near ptr _IO_sputbackc  	ESP=FF9AACBC                            	
+000022D8	libc.so.6:_IO_sputbackc 	endbr32                         	                                        	
+000022D8	libc.so.6:_IO_sputbackc+4	call    near ptr unk_F7E69E3D   	ESP=FF9AACB8                            	
+000022D8	libc.so.6:unk_F7E69E3D  	mov     edx, [esp]              	EDX=F7D781D9                            	
+000022D8	libc.so.6:__frame_state_for+3A0	retn                            	ESP=FF9AACBC                            	
+000022D8	libc.so.6:_IO_sputbackc+9	add     edx, 1A9E27h            	EDX=F7F22000 AF=1 ZF=0 SF=1             	
+000022D8	libc.so.6:_IO_sputbackc+F	push    edi                     	ESP=FF9AACB8                            	
+000022D8	libc.so.6:_IO_sputbackc+10	push    esi                     	ESP=FF9AACB4                            	
+000022D8	libc.so.6:_IO_sputbackc+11	push    ebx                     	ESP=FF9AACB0                            	
+000022D8	libc.so.6:_IO_sputbackc+12	mov     esi, [esp+10h]          	ESI=F7F22620                            	
+000022D8	libc.so.6:_IO_sputbackc+16	mov     ebx, [esp+14h]          	EBX=00000031                            	
+000022D8	libc.so.6:_IO_sputbackc+1A	mov     eax, [esi+4]            	EAX=099F51A1                            	
+000022D8	libc.so.6:_IO_sputbackc+1D	cmp     eax, [esi+0Ch]          	PF=0 AF=0 SF=0                          	
+000022D8	libc.so.6:_IO_sputbackc+20	jbe     short near ptr unk_F7D781F7	                                        	
+000022D8	libc.so.6:_IO_sputbackc+22	cmp     [eax-1], bl             	PF=1 ZF=1                               	
+000022D8	libc.so.6:_IO_sputbackc+25	jz      short near ptr unk_F7D78230	                                        	
+000022D8	libc.so.6:unk_F7D78230  	sub     eax, 1                  	EAX=099F51A0 ZF=0                       	
+000022D8	libc.so.6:_IO_sputbackc+63	mov     [esi+4], eax            	                                        	
+000022D8	libc.so.6:_IO_sputbackc+66	movzx   eax, bl                 	EAX=00000031                            	
+000022D8	libc.so.6:_IO_sputbackc+69	jmp     short near ptr unk_F7D78228	                                        	
+000022D8	libc.so.6:unk_F7D78228  	and     dword ptr [esi], 0FFFFFFEFh	SF=1                                    	
+000022D8	libc.so.6:_IO_sputbackc+5B	pop     ebx                     	EBX=00000073 ESP=FF9AACB4               	
+000022D8	libc.so.6:_IO_sputbackc+5C	pop     esi                     	ESI=00000000 ESP=FF9AACB8               	
+000022D8	libc.so.6:_IO_sputbackc+5D	pop     edi                     	ESP=FF9AACBC                            	
+000022D8	libc.so.6:_IO_sputbackc+5E	retn                            	ESP=FF9AACC0                            	
+000022D8	libc.so.6:psiginfo+105B 	lea     edx, [ebx-25h]          	EDX=0000004E                            	
+000022D8	libc.so.6:psiginfo+105E 	add     esp, 10h                	ESP=FF9AACD0 PF=0                       	
+000022D8	libc.so.6:psiginfo+1061 	cmp     dl, 53h ; 'S'           	CF=1                                    	
+000022D8	libc.so.6:psiginfo+1064 	ja      loc_F7D519B0            	                                        	
+000022D8	libc.so.6:psiginfo+106A 	mov     eax, [ebp-59Ch]         	EAX=F7F22000                            	
+000022D8	libc.so.6:psiginfo+1070 	movzx   edx, dl                 	                                        	
+000022D8	libc.so.6:psiginfo+1073 	add     eax, [eax+edx*4-742B0h] 	EAX=F7D52FCA PF=1                       	
+000022D8	libc.so.6:psiginfo+107A 	jmp     eax                     	                                        	
+000022D8	libc.so.6:loc_F7D52FCA  	mov     eax, [ebp-5E0h]         	EAX=00000000                            	
+000022D8	libc.so.6:psiginfo+2170 	mov     [ebp-5B0h], esi         	                                        	
+000022D8	libc.so.6:psiginfo+2176 	mov     edi, eax                	                                        	
+000022D8	libc.so.6:psiginfo+2178 	and     edi, 1                  	CF=0 ZF=1 SF=0                          	
+000022D8	libc.so.6:psiginfo+217B 	mov     [ebp-5ACh], edi         	                                        	
+000022D8	libc.so.6:psiginfo+2181 	jnz     loc_F7D51F5F            	                                        	
+000022D8	libc.so.6:psiginfo+2187 	mov     edi, eax                	                                        	
+000022D8	libc.so.6:psiginfo+2189 	and     edi, 8                  	                                        	
+000022D8	libc.so.6:psiginfo+218C 	jnz     loc_F7D53091            	                                        	
+000022D8	libc.so.6:psiginfo+2192 	test    ah, 21h                 	                                        	
+000022D8	libc.so.6:psiginfo+2195 	jz      loc_F7D56A27            	                                        	
+000022D8	libc.so.6:loc_F7D56A27  	mov     eax, [ebp-5ECh]         	                                        	
+000022D8	libc.so.6:psiginfo+5BCD 	test    eax, eax                	                                        	
+000022D8	libc.so.6:psiginfo+5BCF 	jnz     loc_F7D57AB7            	                                        	
+000022D8	libc.so.6:psiginfo+5BD5 	mov     eax, [ebp-5E8h]         	EAX=FF9AB324                            	
+000022D8	libc.so.6:psiginfo+5BDB 	mov     ecx, [eax]              	ECX=FF9AB33F                            	
+000022D8	libc.so.6:psiginfo+5BDD 	add     eax, 4                  	EAX=FF9AB328 ZF=0 SF=1                  	
+000022D8	libc.so.6:psiginfo+5BE0 	mov     [ebp-5E8h], eax         	                                        	
+000022D8	libc.so.6:psiginfo+5BE6 	mov     [ebp-608h], ecx         	                                        	
+000022D8	libc.so.6:loc_F7D56A4C  	mov     eax, [ebp-608h]         	EAX=FF9AB33F                            	
+000022D8	libc.so.6:psiginfo+5BF2 	test    eax, eax                	                                        	
+000022D8	libc.so.6:psiginfo+5BF4 	jnz     loc_F7D53091            	                                        	
+000022D8	libc.so.6:loc_F7D53091  	cmp     dword ptr [ebp-5A0h], 0FFFFFFFFh	CF=1 PF=0 AF=1 SF=0                     	
+000022D8	libc.so.6:psiginfo+2238 	jz      loc_F7D55B17            	                                        	
+000022D8	libc.so.6:psiginfo+223E 	mov     ecx, [ebp-5C0h]         	ECX=F7F22620                            	
+000022D8	libc.so.6:psiginfo+2244 	mov     eax, [ecx+4]            	EAX=099F51A0                            	
+000022D8	libc.so.6:psiginfo+2247 	cmp     eax, [ecx+8]            	PF=1 SF=1                               	
+000022D8	libc.so.6:psiginfo+224A 	jnb     loc_F7D55AD0            	                                        	
+000022D8	libc.so.6:psiginfo+2250 	mov     ecx, [ebp-5C0h]         	                                        	
+000022D8	libc.so.6:psiginfo+2256 	lea     edx, [eax+1]            	EDX=099F51A1                            	
+000022D8	libc.so.6:psiginfo+2259 	mov     [ecx+4], edx            	                                        	
+000022D8	libc.so.6:psiginfo+225C 	movzx   eax, byte ptr [eax]     	EAX=00000031                            	
+000022D8	libc.so.6:psiginfo+225F 	mov     [ebp-5A0h], eax         	                                        	
+000022D8	libc.so.6:loc_F7D530C5  	mov     eax, [ebp-5CCh]         	EAX=F7F22C60                            	
+000022D8	libc.so.6:psiginfo+226B 	mov     edx, [ebp-5A0h]         	EDX=00000031                            	
+000022D8	libc.so.6:psiginfo+2271 	add     esi, 1                  	ESI=00000001 CF=0 PF=0 AF=0 SF=0        	
+000022D8	libc.so.6:psiginfo+2274 	mov     eax, [eax+34h]          	EAX=F7E9C380                            	
+000022D8	libc.so.6:psiginfo+2277 	test    byte ptr [eax+edx*2+1], 20h	PF=1 ZF=1                               	
+000022D8	libc.so.6:psiginfo+227C 	jnz     loc_F7D57ADA            	                                        	
+000022D8	libc.so.6:psiginfo+2282 	mov     eax, [ebp-5E0h]         	EAX=00000000                            	
+000022D8	libc.so.6:psiginfo+2288 	mov     [ebp-5A0h], edi         	                                        	
+000022D8	libc.so.6:psiginfo+228E 	mov     edi, esi                	EDI=00000001                            	
+000022D8	libc.so.6:psiginfo+2290 	mov     ebx, [ebp-608h]         	EBX=FF9AB33F                            	
+000022D8	libc.so.6:psiginfo+2296 	mov     esi, [ebp-5C0h]         	ESI=F7F22620                            	
+000022D8	libc.so.6:psiginfo+229C 	and     eax, 2100h              	                                        	
+000022D8	libc.so.6:psiginfo+22A1 	mov     [ebp-5BCh], eax         	                                        	
+000022D8	libc.so.6:psiginfo+22A7 	jmp     short loc_F7D5317A      	                                        	
+000022D8	libc.so.6:loc_F7D5317A  	mov     eax, [ebp-5A0h]         	                                        	
+000022D8	libc.so.6:psiginfo+2320 	test    eax, eax                	                                        	
+000022D8	libc.so.6:psiginfo+2322 	jnz     short loc_F7D53133      	                                        	
+000022D8	libc.so.6:psiginfo+2324 	mov     ecx, [ebp-5BCh]         	ECX=00000000                            	
+000022D8	libc.so.6:psiginfo+232A 	mov     [ebx], dl               	                                        	
+000022D8	libc.so.6:psiginfo+232C 	lea     eax, [ebx+1]            	EAX=FF9AB340                            	
+000022D8	libc.so.6:psiginfo+232F 	test    ecx, ecx                	                                        	
+000022D8	libc.so.6:psiginfo+2331 	jnz     loc_F7D53109            	                                        	
+000022D8	libc.so.6:psiginfo+2337 	mov     ebx, eax                	EBX=FF9AB340                            	
+000022D8	libc.so.6:psiginfo+2339 	jmp     short loc_F7D53133      	                                        	
+000022D8	libc.so.6:loc_F7D53133  	mov     eax, [ebp-5B8h]         	EAX=00000020                            	
+000022D8	libc.so.6:psiginfo+22D9 	test    eax, eax                	PF=0 ZF=0                               	
+000022D8	libc.so.6:psiginfo+22DB 	jle     short loc_F7D5314C      	                                        	
+000022D8	libc.so.6:psiginfo+22DD 	sub     eax, 1                  	EAX=0000001F AF=1                       	
+000022D8	libc.so.6:psiginfo+22E0 	mov     [ebp-5B8h], eax         	                                        	
+000022D8	libc.so.6:psiginfo+22E6 	jz      loc_F7D56BBC            	                                        	
+000022D8	libc.so.6:loc_F7D5314C  	mov     eax, [esi+4]            	EAX=099F51A1                            	
+000022D8	libc.so.6:psiginfo+22EF 	cmp     eax, [esi+8]            	CF=1 SF=1                               	
+000022D8	libc.so.6:psiginfo+22F2 	jnb     loc_F7D535B5            	                                        	
+000022D8	libc.so.6:psiginfo+22F8 	lea     ecx, [eax+1]            	ECX=099F51A2                            	
+000022D8	libc.so.6:psiginfo+22FB 	mov     [esi+4], ecx            	                                        	
+000022D8	libc.so.6:psiginfo+22FE 	movzx   edx, byte ptr [eax]     	                                        	
+000022D8	libc.so.6:loc_F7D53161  	mov     ecx, [ebp-5CCh]         	ECX=F7F22C60                            	
+000022D8	libc.so.6:psiginfo+2307 	lea     eax, [edi+1]            	EAX=00000002                            	
+000022D8	libc.so.6:psiginfo+230A 	mov     ecx, [ecx+34h]          	ECX=F7E9C380                            	
+000022D8	libc.so.6:psiginfo+230D 	test    byte ptr [ecx+edx*2+1], 20h	CF=0 PF=1 AF=0 ZF=1 SF=0                	
+000022D8	libc.so.6:psiginfo+2312 	jnz     loc_F7D55CC2            	                                        	
+000022D8	libc.so.6:psiginfo+2318 	mov     edi, eax                	EDI=00000002                            	
+000022D8	libc.so.6:loc_F7D5317A  	mov     eax, [ebp-5A0h]         	EAX=00000000                            	
+000022D8	libc.so.6:psiginfo+2320 	test    eax, eax                	                                        	
+000022D8	libc.so.6:psiginfo+2322 	jnz     short loc_F7D53133      	                                        	
+000022D8	libc.so.6:psiginfo+2324 	mov     ecx, [ebp-5BCh]         	ECX=00000000                            	
+000022D8	libc.so.6:psiginfo+232A 	mov     [ebx], dl               	                                        	
+000022D8	libc.so.6:psiginfo+232C 	lea     eax, [ebx+1]            	EAX=FF9AB341                            	
+000022D8	libc.so.6:psiginfo+232F 	test    ecx, ecx                	                                        	
+000022D8	libc.so.6:psiginfo+2331 	jnz     loc_F7D53109            	                                        	
+000022D8	libc.so.6:psiginfo+2337 	mov     ebx, eax                	EBX=FF9AB341                            	
+000022D8	libc.so.6:psiginfo+2339 	jmp     short loc_F7D53133      	                                        	
+000022D8	libc.so.6:loc_F7D53133  	mov     eax, [ebp-5B8h]         	EAX=0000001F                            	
+000022D8	libc.so.6:psiginfo+22D9 	test    eax, eax                	PF=0 ZF=0                               	
+000022D8	libc.so.6:psiginfo+22DB 	jle     short loc_F7D5314C      	                                        	
+000022D8	libc.so.6:psiginfo+22DD 	sub     eax, 1                  	EAX=0000001E PF=1                       	
+000022D8	libc.so.6:psiginfo+22E0 	mov     [ebp-5B8h], eax         	                                        	
+000022D8	libc.so.6:psiginfo+22E6 	jz      loc_F7D56BBC            	                                        	
+000022D8	libc.so.6:loc_F7D5314C  	mov     eax, [esi+4]            	EAX=099F51A2                            	
+000022D8	libc.so.6:psiginfo+22EF 	cmp     eax, [esi+8]            	CF=1 PF=0 AF=1 SF=1                     	
+000022D8	libc.so.6:psiginfo+22F2 	jnb     loc_F7D535B5            	                                        	
+000022D8	libc.so.6:psiginfo+22F8 	lea     ecx, [eax+1]            	ECX=099F51A3                            	
+000022D8	libc.so.6:psiginfo+22FB 	mov     [esi+4], ecx            	                                        	
+000022D8	libc.so.6:psiginfo+22FE 	movzx   edx, byte ptr [eax]     	                                        	
+000022D8	libc.so.6:loc_F7D53161  	mov     ecx, [ebp-5CCh]         	ECX=F7F22C60                            	
+000022D8	libc.so.6:psiginfo+2307 	lea     eax, [edi+1]            	EAX=00000003                            	
+000022D8	libc.so.6:psiginfo+230A 	mov     ecx, [ecx+34h]          	ECX=F7E9C380                            	
+000022D8	libc.so.6:psiginfo+230D 	test    byte ptr [ecx+edx*2+1], 20h	CF=0 PF=1 AF=0 ZF=1 SF=0                	
+000022D8	libc.so.6:psiginfo+2312 	jnz     loc_F7D55CC2            	                                        	
+000022D8	libc.so.6:psiginfo+2318 	mov     edi, eax                	EDI=00000003                            	
+000022D8	libc.so.6:loc_F7D5317A  	mov     eax, [ebp-5A0h]         	EAX=00000000                            	
+000022D8	libc.so.6:psiginfo+2320 	test    eax, eax                	                                        	
+000022D8	libc.so.6:psiginfo+2322 	jnz     short loc_F7D53133      	                                        	
+000022D8	libc.so.6:psiginfo+2324 	mov     ecx, [ebp-5BCh]         	ECX=00000000                            	
+000022D8	libc.so.6:psiginfo+232A 	mov     [ebx], dl               	                                        	
+000022D8	libc.so.6:psiginfo+232C 	lea     eax, [ebx+1]            	EAX=FF9AB342                            	
+000022D8	libc.so.6:psiginfo+232F 	test    ecx, ecx                	                                        	
+000022D8	libc.so.6:psiginfo+2331 	jnz     loc_F7D53109            	                                        	
+000022D8	libc.so.6:psiginfo+2337 	mov     ebx, eax                	EBX=FF9AB342                            	
+000022D8	libc.so.6:psiginfo+2339 	jmp     short loc_F7D53133      	                                        	
+000022D8	libc.so.6:loc_F7D53133  	mov     eax, [ebp-5B8h]         	EAX=0000001E                            	
+000022D8	libc.so.6:psiginfo+22D9 	test    eax, eax                	ZF=0                                    	
+000022D8	libc.so.6:psiginfo+22DB 	jle     short loc_F7D5314C      	                                        	
+000022D8	libc.so.6:psiginfo+22DD 	sub     eax, 1                  	EAX=0000001D                            	
+000022D8	libc.so.6:psiginfo+22E0 	mov     [ebp-5B8h], eax         	                                        	
+000022D8	libc.so.6:psiginfo+22E6 	jz      loc_F7D56BBC            	                                        	
+000022D8	libc.so.6:loc_F7D5314C  	mov     eax, [esi+4]            	EAX=099F51A3                            	
+000022D8	libc.so.6:psiginfo+22EF 	cmp     eax, [esi+8]            	CF=1 AF=1 SF=1                          	
+000022D8	libc.so.6:psiginfo+22F2 	jnb     loc_F7D535B5            	                                        	
+000022D8	libc.so.6:psiginfo+22F8 	lea     ecx, [eax+1]            	ECX=099F51A4                            	
+000022D8	libc.so.6:psiginfo+22FB 	mov     [esi+4], ecx            	                                        	
+000022D8	libc.so.6:psiginfo+22FE 	movzx   edx, byte ptr [eax]     	EDX=0000000A                            	
+000022D8	libc.so.6:loc_F7D53161  	mov     ecx, [ebp-5CCh]         	ECX=F7F22C60                            	
+000022D8	libc.so.6:psiginfo+2307 	lea     eax, [edi+1]            	EAX=00000004                            	
+000022D8	libc.so.6:psiginfo+230A 	mov     ecx, [ecx+34h]          	ECX=F7E9C380                            	
+000022D8	libc.so.6:psiginfo+230D 	test    byte ptr [ecx+edx*2+1], 20h	CF=0 PF=0 AF=0 SF=0                     	
+000022D8	libc.so.6:psiginfo+2312 	jnz     loc_F7D55CC2            	                                        	
+000022D8	libc.so.6:loc_F7D55CC2  	mov     esi, edi                	ESI=00000003                            	
+000022D8	libc.so.6:psiginfo+4E64 	mov     [ebp-608h], ebx         	                                        	
+000022D8	libc.so.6:psiginfo+4E6A 	mov     edi, [ebp-5A0h]         	EDI=00000000                            	
+000022D8	libc.so.6:psiginfo+4E70 	mov     [ebp-5A0h], edx         	                                        	
+000022D8	libc.so.6:loc_F7D55CD6  	movzx   eax, byte ptr [ebp-5A0h]	EAX=0000000A                            	
+000022D8	libc.so.6:psiginfo+4E7D 	sub     esp, 8                  	ESP=FF9AACC8 AF=1 SF=1                  	
+000022D8	libc.so.6:psiginfo+4E80 	push    eax                     	ESP=FF9AACC4                            	
+000022D8	libc.so.6:psiginfo+4E81 	push    dword ptr [ebp-5C0h]    	ESP=FF9AACC0                            	
+000022D8	libc.so.6:psiginfo+4E87 	call    near ptr _IO_sputbackc  	ESP=FF9AACBC                            	
+000022D8	libc.so.6:_IO_sputbackc 	endbr32                         	                                        	
+000022D8	libc.so.6:_IO_sputbackc+4	call    near ptr unk_F7E69E3D   	ESP=FF9AACB8                            	
+000022D8	libc.so.6:unk_F7E69E3D  	mov     edx, [esp]              	EDX=F7D781D9                            	
+000022D8	libc.so.6:__frame_state_for+3A0	retn                            	ESP=FF9AACBC                            	
+000022D8	libc.so.6:_IO_sputbackc+9	add     edx, 1A9E27h            	EDX=F7F22000 PF=1                       	
+000022D8	libc.so.6:_IO_sputbackc+F	push    edi                     	ESP=FF9AACB8                            	
+000022D8	libc.so.6:_IO_sputbackc+10	push    esi                     	ESP=FF9AACB4                            	
+000022D8	libc.so.6:_IO_sputbackc+11	push    ebx                     	ESP=FF9AACB0                            	
+000022D8	libc.so.6:_IO_sputbackc+12	mov     esi, [esp+10h]          	ESI=F7F22620                            	
+000022D8	libc.so.6:_IO_sputbackc+16	mov     ebx, [esp+14h]          	EBX=0000000A                            	
+000022D8	libc.so.6:_IO_sputbackc+1A	mov     eax, [esi+4]            	EAX=099F51A4                            	
+000022D8	libc.so.6:_IO_sputbackc+1D	cmp     eax, [esi+0Ch]          	PF=0 AF=0 SF=0                          	
+000022D8	libc.so.6:_IO_sputbackc+20	jbe     short near ptr unk_F7D781F7	                                        	
+000022D8	libc.so.6:_IO_sputbackc+22	cmp     [eax-1], bl             	PF=1 ZF=1                               	
+000022D8	libc.so.6:_IO_sputbackc+25	jz      short near ptr unk_F7D78230	                                        	
+000022D8	libc.so.6:unk_F7D78230  	sub     eax, 1                  	EAX=099F51A3 ZF=0                       	
+000022D8	libc.so.6:_IO_sputbackc+63	mov     [esi+4], eax            	                                        	
+000022D8	libc.so.6:_IO_sputbackc+66	movzx   eax, bl                 	EAX=0000000A                            	
+000022D8	libc.so.6:_IO_sputbackc+69	jmp     short near ptr unk_F7D78228	                                        	
+000022D8	libc.so.6:unk_F7D78228  	and     dword ptr [esi], 0FFFFFFEFh	SF=1                                    	
+000022D8	libc.so.6:_IO_sputbackc+5B	pop     ebx                     	EBX=FF9AB342 ESP=FF9AACB4               	
+000022D8	libc.so.6:_IO_sputbackc+5C	pop     esi                     	ESI=00000003 ESP=FF9AACB8               	
+000022D8	libc.so.6:_IO_sputbackc+5D	pop     edi                     	ESP=FF9AACBC                            	
+000022D8	libc.so.6:_IO_sputbackc+5E	retn                            	ESP=FF9AACC0                            	
+000022D8	libc.so.6:psiginfo+4E8C 	add     esp, 10h                	ESP=FF9AACD0 PF=0                       	
+000022D8	libc.so.6:psiginfo+4E8F 	jmp     loc_F7D535F5            	                                        	
+000022D8	libc.so.6:loc_F7D535F5  	test    edi, edi                	PF=1 ZF=1 SF=0                          	
+000022D8	libc.so.6:psiginfo+2797 	jnz     loc_F7D52D6A            	                                        	
+000022D8	libc.so.6:psiginfo+279D 	mov     eax, [ebp-608h]         	EAX=FF9AB342                            	
+000022D8	libc.so.6:psiginfo+27A3 	mov     byte ptr [eax], 0       	                                        	
+000022D8	libc.so.6:psiginfo+27A6 	lea     edi, [eax+1]            	EDI=FF9AB343                            	
+000022D8	libc.so.6:psiginfo+27A9 	test    dword ptr [ebp-5E0h], 2100h	                                        	
+000022D8	libc.so.6:psiginfo+27B3 	jz      short loc_F7D53648      	                                        	
+000022D8	libc.so.6:loc_F7D53648  	add     dword ptr [ebp-5D0h], 1 	PF=0 ZF=0                               	
+000022D8	libc.so.6:psiginfo+27EF 	mov     ebx, [ebp-57Ch]         	EBX=08048774                            	
+000022D8	libc.so.6:psiginfo+27F5 	mov     dword ptr [ebp-5ACh], 0 	                                        	
+000022D8	libc.so.6:psiginfo+27FF 	mov     [ebp-608h], edi         	                                        	
+000022D8	libc.so.6:psiginfo+2805 	mov     dword ptr [ebp-5DCh], 0 	                                        	
+000022D8	libc.so.6:psiginfo+280F 	jmp     loc_F7D516CC            	                                        	
+000022D8	libc.so.6:loc_F7D516CC  	movzx   eax, byte ptr [ebx]     	EAX=00000000                            	
+000022D8	libc.so.6:psiginfo+86F  	test    al, al                  	PF=1 ZF=1                               	
+000022D8	libc.so.6:psiginfo+871  	jnz     loc_F7D51631            	                                        	
+000022D8	libc.so.6:psiginfo+877  	mov     eax, [ebp-5ACh]         	                                        	
+000022D8	libc.so.6:psiginfo+87D  	test    eax, eax                	                                        	
+000022D8	libc.so.6:psiginfo+87F  	jz      loc_F7D519B0            	                                        	
+000022D8	libc.so.6:loc_F7D519B0  	mov     eax, [ebp-5C0h]         	EAX=F7F22620                            	
+000022D8	libc.so.6:psiginfo+B56  	mov     esi, [eax]              	ESI=FBAD2288                            	
+000022D8	libc.so.6:psiginfo+B58  	mov     [ebp-5A0h], esi         	                                        	
+000022D8	libc.so.6:psiginfo+B5E  	and     esi, 8000h              	ESI=00000000                            	
+000022D8	libc.so.6:psiginfo+B64  	jnz     short loc_F7D519E6      	                                        	
+000022D8	libc.so.6:psiginfo+B66  	mov     edx, [eax+48h]          	EDX=F7F239C0                            	
+000022D8	libc.so.6:psiginfo+B69  	mov     eax, [edx+4]            	EAX=00000001                            	
+000022D8	libc.so.6:psiginfo+B6C  	sub     eax, 1                  	EAX=00000000                            	
+000022D8	libc.so.6:psiginfo+B6F  	mov     [edx+4], eax            	                                        	
+000022D8	libc.so.6:psiginfo+B72  	jnz     short loc_F7D519E6      	                                        	
+000022D8	libc.so.6:psiginfo+B74  	mov     dword ptr [edx+8], 0    	                                        	
+000022D8	libc.so.6:psiginfo+B7B  	xchg    eax, [edx]              	EAX=00000001                            	
+000022D8	libc.so.6:psiginfo+B7D  	cmp     eax, 1                  	                                        	
+000022D8	libc.so.6:psiginfo+B80  	jg      loc_F7D53EED            	                                        	
+000022D8	libc.so.6:loc_F7D519E6  	sub     esp, 0Ch                	ESP=FF9AACC4 PF=0 AF=1 ZF=0 SF=1        	
+000022D8	libc.so.6:psiginfo+B89  	push    dword ptr [ebp-600h]    	ESP=FF9AACC0                            	
+000022D8	libc.so.6:psiginfo+B8F  	call    near ptr unk_F7D7B150   	ESP=FF9AACBC                            	
+000022D8	libc.so.6:unk_F7D7B150  	endbr32                         	                                        	
+000022D8	libc.so.6:__nptl_death_event+414	mov     eax, [esp+4]            	EAX=FF9AAD84                            	
+000022D8	libc.so.6:__nptl_death_event+418	mov     edx, [eax+0Ch]          	EDX=00000000                            	
+000022D8	libc.so.6:__nptl_death_event+41B	mov     large gs:7Ch, edx       	                                        	
+000022D8	libc.so.6:__nptl_death_event+422	mov     eax, [eax+8]            	EAX=00000000                            	
+000022D8	libc.so.6:__nptl_death_event+425	mov     large gs:4FEh, al       	                                        	
+000022D8	libc.so.6:__nptl_death_event+42B	cmp     eax, 1                  	CF=1 PF=1                               	
+000022D8	libc.so.6:__nptl_death_event+42E	jz      short near ptr unk_F7D7B178	                                        	
+000022D8	libc.so.6:__nptl_death_event+430	retn                            	ESP=FF9AACC0                            	
+000022D8	libc.so.6:psiginfo+B94  	mov     eax, [ebp-448h]         	EAX=FF9AAEC0                            	
+000022D8	libc.so.6:psiginfo+B9A  	add     esp, 10h                	ESP=FF9AACD0 CF=0 PF=0 AF=0             	
+000022D8	libc.so.6:psiginfo+B9D  	cmp     eax, [ebp-5FCh]         	PF=1 ZF=1 SF=0                          	
+000022D8	libc.so.6:psiginfo+BA3  	jz      short loc_F7D51A17      	                                        	
+000022D8	libc.so.6:loc_F7D51A17  	cmp     dword ptr [ebp-5D0h], 0FFFFFFFFh	CF=1 PF=0 AF=1 ZF=0                     	
+000022D8	libc.so.6:psiginfo+BBE  	jz      loc_F7D523D8            	                                        	
+000022D8	libc.so.6:psiginfo+BC4  	mov     esi, [ebp-5DCh]         	                                        	
+000022D8	libc.so.6:psiginfo+BCA  	test    esi, esi                	CF=0 PF=1 AF=0 ZF=1                     	
+000022D8	libc.so.6:psiginfo+BCC  	jnz     loc_F7D5242C            	                                        	
+000022D8	libc.so.6:loc_F7D51A32  	mov     eax, [ebp-1Ch]          	EAX=93B3F800                            	
+000022D8	libc.so.6:psiginfo+BD5  	sub     eax, large gs:14h       	EAX=00000000                            	
+000022D8	libc.so.6:psiginfo+BDC  	jnz     loc_F7D57DF7            	                                        	
+000022D8	libc.so.6:psiginfo+BE2  	mov     eax, [ebp-5D0h]         	EAX=00000001                            	
+000022D8	libc.so.6:psiginfo+BE8  	lea     esp, [ebp-0Ch]          	ESP=FF9AB2EC                            	
+000022D8	libc.so.6:psiginfo+BEB  	pop     ebx                     	EBX=00000000 ESP=FF9AB2F0               	
+000022D8	libc.so.6:psiginfo+BEC  	pop     esi                     	ESI=FF9AB444 ESP=FF9AB2F4               	
+000022D8	libc.so.6:psiginfo+BED  	pop     edi                     	EDI=FF9AB360 ESP=FF9AB2F8               	
+000022D8	libc.so.6:psiginfo+BEE  	pop     ebp                     	EBP=FF9AB378 ESP=FF9AB2FC               	
+000022D8	libc.so.6:psiginfo+BEF  	retn                            	ESP=FF9AB300                            	
+000022D8	libc.so.6:__isoc99_scanf+29	add     esp, 1Ch                	ESP=FF9AB31C PF=0 ZF=0 SF=1             	
+000022D8	libc.so.6:__isoc99_scanf+2C	retn                            	ESP=FF9AB320                            	
+000022D8	.text:08048468          	add     esp, 10h                	ESP=FF9AB330 PF=1                       	
+000022D8	.text:0804846B          	sub     esp, 8                  	ESP=FF9AB328 AF=1                       	
+000022D8	.text:0804846E          	push    offset unk_80499EC      	ESP=FF9AB324                            	
+000022D8	.text:08048473          	lea     eax, [ebp-39h]          	EAX=FF9AB33F                            	
+000022D8	.text:08048476          	push    eax                     	ESP=FF9AB320                            	
+000022D8	.text:08048477          	call    loc_804848F             	ESP=FF9AB31C                            	
+000022D8	.text:loc_804848F       	push    ebp                     	ESP=FF9AB318                            	
+000022D8	.text:loc_804848F+1     	mov     ebp, esp                	EBP=FF9AB318                            	
+000022D8	.text:loc_804848F+3     	push    edi                     	ESP=FF9AB314                            	
+000022D8	.text:loc_804848F+4     	push    esi                     	ESP=FF9AB310                            	
+000022D8	.text:08048494          	push    ebx                     	ESP=FF9AB30C                            	
+000022D8	.text:08048495          	sub     esp, 1Ch                	ESP=FF9AB2F0 AF=0                       	
+000022D8	.text:08048498          	mov     dword ptr [ebp-1Ch], 0  	                                        	
+000022D8	.text:0804849F          	push    eax                     	ESP=FF9AB2EC                            	
+000022D8	.text:080484A0          	push    ebx                     	ESP=FF9AB2E8                            	
+000022D8	.text:080484A1          	push    esp                     	ESP=FF9AB2E4                            	
+000022D8	.text:080484A2          	jmp     short loc_80484B7       	                                        	
+000022D8	.text:loc_80484B7       	mov     ebx, esp                	EBX=FF9AB2E4                            	
+000022D8	.text:080484B9          	pop     esp                     	ESP=FF9AB2E8                            	
+000022D8	.text:080484BA          	pop     ebx                     	EBX=00000000 ESP=FF9AB2EC               	
+000022D8	.text:080484BB          	pop     eax                     	ESP=FF9AB2F0                            	
+000022D8	.text:080484BC          	jmp     short loc_804853C       	                                        	
+000022D8	.text:loc_804853C       	mov     edx, [ebp-1Ch]          	                                        	
+000022D8	.text:0804853F          	mov     eax, [ebp+8]            	                                        	
+000022D8	.text:08048542          	add     eax, edx                	                                        	
+000022D8	.text:08048544          	movzx   eax, byte ptr [eax]     	EAX=00000031                            	
+000022D8	.text:08048547          	test    al, al                  	PF=0 SF=0                               	
+000022D8	.text:08048549          	jnz     loc_80484BE             	                                        	
+000022D8	.text:loc_80484BE       	jb      short near ptr loc_80484C2+1	                                        	
+000022D8	.text:080484C0          	jnb     short near ptr loc_80484C2+1	                                        	
+000022D8	.text:loc_80484C2+1     	mov     edx, [ebp-1Ch]          	                                        	
+000022D8	.text:loc_80484C2+4     	mov     eax, [ebp+8]            	EAX=FF9AB33F                            	
+000022D8	.text:080484C9          	lea     ebx, [edx+eax]          	EBX=FF9AB33F                            	
+000022D8	.text:080484CC          	mov     edx, [ebp-1Ch]          	                                        	
+000022D8	.text:080484CF          	mov     eax, [ebp+8]; DMA page register 74LS612:	                                        	
+000022D8	.text:080484D2          	add     eax, edx                	PF=1 SF=1                               	
+000022D8	.text:080484D4          	movzx   eax, byte ptr [eax]     	EAX=00000031                            	
+000022D8	.text:080484D7          	movzx   esi, al                 	ESI=00000031                            	
+000022D8	.text:080484DA          	mov     eax, [ebp-1Ch]          	EAX=00000000                            	
+000022D8	.text:080484DD          	cdq                             	                                        	
+000022D8	.text:080484DE          	shr     edx, 1Dh                	AF=1 ZF=1 SF=0                          	
+000022D8	.text:080484E1          	add     eax, edx                	AF=0                                    	
+000022D8	.text:080484E3          	and     eax, 7                  	                                        	
+000022D8	.text:080484E6          	sub     eax, edx                	                                        	
+000022D8	.text:080484E8          	mov     ecx, eax                	ECX=00000000                            	
+000022D8	.text:080484EA          	sar     esi, cl                 	                                        	
+000022D8	.text:080484EC          	mov     eax, esi                	EAX=00000031                            	
+000022D8	.text:080484EE          	mov     edi, eax                	EDI=00000031                            	
+000022D8	.text:080484F0          	mov     edx, [ebp-1Ch]          	                                        	
+000022D8	.text:080484F3          	mov     eax, [ebp+8]            	EAX=FF9AB33F                            	
+000022D8	.text:080484F6          	add     eax, edx                	ZF=0 SF=1                               	
+000022D8	.text:080484F8          	movzx   eax, byte ptr [eax]     	EAX=00000031                            	
+000022D8	.text:080484FB          	movzx   esi, al                 	                                        	
+000022D8	.text:080484FE          	mov     eax, [ebp-1Ch]          	EAX=00000000                            	
+000022D8	.text:08048501          	cdq                             	                                        	
+000022D8	.text:loc_8048502       	shr     edx, 1Dh                	AF=1 ZF=1 SF=0                          	
+000022D8	.text:08048505          	add     eax, edx                	AF=0                                    	
+000022D8	.text:08048507          	and     eax, 7                  	                                        	
+000022D8	.text:0804850A          	sub     eax, edx                	                                        	
+000022D8	.text:0804850C          	mov     edx, 8                  	EDX=00000008                            	
+000022D8	.text:08048511          	sub     edx, eax                	PF=0 ZF=0                               	
+000022D8	.text:08048513          	mov     eax, edx                	EAX=00000008                            	
+000022D8	.text:08048515          	mov     ecx, eax                	ECX=00000008                            	
+000022D8	.text:08048517          	shl     esi, cl                 	ESI=00003100 PF=1 AF=1                  	
+000022D8	.text:08048519          	mov     eax, esi                	EAX=00003100                            	
+000022D8	.text:0804851B          	mov     edx, edi                	EDX=00000031                            	
+000022D8	.text:0804851D          	or      edx, eax                	EDX=00003131 PF=0 AF=0                  	
+000022D8	.text:0804851F          	mov     eax, [ebp-1Ch]          	EAX=00000000                            	
+000022D8	.text:08048522          	xor     eax, edx                	EAX=00003131                            	
+000022D8	.text:08048524          	mov     [ebx], al               	                                        	
+000022D8	.text:08048526          	add     dword ptr [ebp-1Ch], 1  	                                        	
+000022D8	.text:0804852A          	jb      short loc_804853C       	                                        	
+000022D8	.text:0804852C          	jnb     short loc_804853C       	                                        	
+000022D8	.text:loc_804853C       	mov     edx, [ebp-1Ch]          	EDX=00000001                            	
+000022D8	.text:0804853F          	mov     eax, [ebp+8]            	EAX=FF9AB33F                            	
+000022D8	.text:08048542          	add     eax, edx                	EAX=FF9AB340 AF=1 SF=1                  	
+000022D8	.text:08048544          	movzx   eax, byte ptr [eax]     	EAX=00000031                            	
+000022D8	.text:08048547          	test    al, al                  	AF=0 SF=0                               	
+000022D8	.text:08048549          	jnz     loc_80484BE             	                                        	
+000022D8	.text:loc_80484BE       	jb      short near ptr loc_80484C2+1	                                        	
+000022D8	.text:080484C0          	jnb     short near ptr loc_80484C2+1	                                        	
+000022D8	.text:loc_80484C2+1     	mov     edx, [ebp-1Ch]          	                                        	
+000022D8	.text:loc_80484C2+4     	mov     eax, [ebp+8]            	EAX=FF9AB33F                            	
+000022D8	.text:080484C9          	lea     ebx, [edx+eax]          	EBX=FF9AB340                            	
+000022D8	.text:080484CC          	mov     edx, [ebp-1Ch]          	                                        	
+000022D8	.text:080484CF          	mov     eax, [ebp+8]; DMA page register 74LS612:	                                        	
+000022D8	.text:080484D2          	add     eax, edx                	EAX=FF9AB340 AF=1 SF=1                  	
+000022D8	.text:080484D4          	movzx   eax, byte ptr [eax]     	EAX=00000031                            	
+000022D8	.text:080484D7          	movzx   esi, al                 	ESI=00000031                            	
+000022D8	.text:080484DA          	mov     eax, [ebp-1Ch]          	EAX=00000001                            	
+000022D8	.text:080484DD          	cdq                             	EDX=00000000                            	
+000022D8	.text:080484DE          	shr     edx, 1Dh                	PF=1 ZF=1 SF=0                          	
+000022D8	.text:080484E1          	add     eax, edx                	PF=0 AF=0 ZF=0                          	
+000022D8	.text:080484E3          	and     eax, 7                  	                                        	
+000022D8	.text:080484E6          	sub     eax, edx                	                                        	
+000022D8	.text:080484E8          	mov     ecx, eax                	ECX=00000001                            	
+000022D8	.text:080484EA          	sar     esi, cl                 	ESI=00000018 CF=1 PF=1 AF=1             	
+000022D8	.text:080484EC          	mov     eax, esi                	EAX=00000018                            	
+000022D8	.text:080484EE          	mov     edi, eax                	EDI=00000018                            	
+000022D8	.text:080484F0          	mov     edx, [ebp-1Ch]          	EDX=00000001                            	
+000022D8	.text:080484F3          	mov     eax, [ebp+8]            	EAX=FF9AB33F                            	
+000022D8	.text:080484F6          	add     eax, edx                	EAX=FF9AB340 CF=0 PF=0 SF=1             	
+000022D8	.text:080484F8          	movzx   eax, byte ptr [eax]     	EAX=00000031                            	
+000022D8	.text:080484FB          	movzx   esi, al                 	ESI=00000031                            	
+000022D8	.text:080484FE          	mov     eax, [ebp-1Ch]          	EAX=00000001                            	
+000022D8	.text:08048501          	cdq                             	EDX=00000000                            	
+000022D8	.text:loc_8048502       	shr     edx, 1Dh                	PF=1 ZF=1 SF=0                          	
+000022D8	.text:08048505          	add     eax, edx                	PF=0 AF=0 ZF=0                          	
+000022D8	.text:08048507          	and     eax, 7                  	                                        	
+000022D8	.text:0804850A          	sub     eax, edx                	                                        	
+000022D8	.text:0804850C          	mov     edx, 8                  	EDX=00000008                            	
+000022D8	.text:08048511          	sub     edx, eax                	EDX=00000007                            	
+000022D8	.text:08048513          	mov     eax, edx                	EAX=00000007                            	
+000022D8	.text:08048515          	mov     ecx, eax                	ECX=00000007                            	
+000022D8	.text:08048517          	shl     esi, cl                 	ESI=00001880 AF=1                       	
+000022D8	.text:08048519          	mov     eax, esi                	EAX=00001880                            	
+000022D8	.text:0804851B          	mov     edx, edi                	EDX=00000018                            	
+000022D8	.text:0804851D          	or      edx, eax                	EDX=00001898 AF=0                       	
+000022D8	.text:0804851F          	mov     eax, [ebp-1Ch]          	EAX=00000001                            	
+000022D8	.text:08048522          	xor     eax, edx                	EAX=00001899 PF=1                       	
+000022D8	.text:08048524          	mov     [ebx], al               	                                        	
+000022D8	.text:08048526          	add     dword ptr [ebp-1Ch], 1  	PF=0                                    	
+000022D8	.text:0804852A          	jb      short loc_804853C       	                                        	
+000022D8	.text:0804852C          	jnb     short loc_804853C       	                                        	
+000022D8	.text:loc_804853C       	mov     edx, [ebp-1Ch]          	EDX=00000002                            	
+000022D8	.text:0804853F          	mov     eax, [ebp+8]            	EAX=FF9AB33F                            	
+000022D8	.text:08048542          	add     eax, edx                	EAX=FF9AB341 PF=1 AF=1 SF=1             	
+000022D8	.text:08048544          	movzx   eax, byte ptr [eax]     	EAX=00000031                            	
+000022D8	.text:08048547          	test    al, al                  	PF=0 AF=0 SF=0                          	
+000022D8	.text:08048549          	jnz     loc_80484BE             	                                        	
+000022D8	.text:loc_80484BE       	jb      short near ptr loc_80484C2+1	                                        	
+000022D8	.text:080484C0          	jnb     short near ptr loc_80484C2+1	                                        	
+000022D8	.text:loc_80484C2+1     	mov     edx, [ebp-1Ch]          	                                        	
+000022D8	.text:loc_80484C2+4     	mov     eax, [ebp+8]            	EAX=FF9AB33F                            	
+000022D8	.text:080484C9          	lea     ebx, [edx+eax]          	EBX=FF9AB341                            	
+000022D8	.text:080484CC          	mov     edx, [ebp-1Ch]          	                                        	
+000022D8	.text:080484CF          	mov     eax, [ebp+8]; DMA page register 74LS612:	                                        	
+000022D8	.text:080484D2          	add     eax, edx                	EAX=FF9AB341 PF=1 AF=1 SF=1             	
+000022D8	.text:080484D4          	movzx   eax, byte ptr [eax]     	EAX=00000031                            	
+000022D8	.text:080484D7          	movzx   esi, al                 	ESI=00000031                            	
+000022D8	.text:080484DA          	mov     eax, [ebp-1Ch]          	EAX=00000002                            	
+000022D8	.text:080484DD          	cdq                             	EDX=00000000                            	
+000022D8	.text:080484DE          	shr     edx, 1Dh                	ZF=1 SF=0                               	
+000022D8	.text:080484E1          	add     eax, edx                	PF=0 AF=0 ZF=0                          	
+000022D8	.text:080484E3          	and     eax, 7                  	                                        	
+000022D8	.text:080484E6          	sub     eax, edx                	                                        	
+000022D8	.text:080484E8          	mov     ecx, eax                	ECX=00000002                            	
+000022D8	.text:080484EA          	sar     esi, cl                 	ESI=0000000C PF=1 AF=1                  	
+000022D8	.text:080484EC          	mov     eax, esi                	EAX=0000000C                            	
+000022D8	.text:080484EE          	mov     edi, eax                	EDI=0000000C                            	
+000022D8	.text:080484F0          	mov     edx, [ebp-1Ch]          	EDX=00000002                            	
+000022D8	.text:080484F3          	mov     eax, [ebp+8]            	EAX=FF9AB33F                            	
+000022D8	.text:080484F6          	add     eax, edx                	EAX=FF9AB341 SF=1                       	
+000022D8	.text:080484F8          	movzx   eax, byte ptr [eax]     	EAX=00000031                            	
+000022D8	.text:080484FB          	movzx   esi, al                 	ESI=00000031                            	
+000022D8	.text:080484FE          	mov     eax, [ebp-1Ch]          	EAX=00000002                            	
+000022D8	.text:08048501          	cdq                             	EDX=00000000                            	
+000022D8	.text:loc_8048502       	shr     edx, 1Dh                	ZF=1 SF=0                               	
+000022D8	.text:08048505          	add     eax, edx                	PF=0 AF=0 ZF=0                          	
+000022D8	.text:08048507          	and     eax, 7                  	                                        	
+000022D8	.text:0804850A          	sub     eax, edx                	                                        	
+000022D8	.text:0804850C          	mov     edx, 8                  	EDX=00000008                            	
+000022D8	.text:08048511          	sub     edx, eax                	EDX=00000006 PF=1                       	
+000022D8	.text:08048513          	mov     eax, edx                	EAX=00000006                            	
+000022D8	.text:08048515          	mov     ecx, eax                	ECX=00000006                            	
+000022D8	.text:08048517          	shl     esi, cl                 	ESI=00000C40 PF=0 AF=1                  	
+000022D8	.text:08048519          	mov     eax, esi                	EAX=00000C40                            	
+000022D8	.text:0804851B          	mov     edx, edi                	EDX=0000000C                            	
+000022D8	.text:0804851D          	or      edx, eax                	EDX=00000C4C AF=0                       	
+000022D8	.text:0804851F          	mov     eax, [ebp-1Ch]          	EAX=00000002                            	
+000022D8	.text:08048522          	xor     eax, edx                	EAX=00000C4E PF=1                       	
+000022D8	.text:08048524          	mov     [ebx], al               	                                        	
+000022D8	.text:08048526          	add     dword ptr [ebp-1Ch], 1  	                                        	
+000022D8	.text:0804852A          	jb      short loc_804853C       	                                        	
+000022D8	.text:0804852C          	jnb     short loc_804853C       	                                        	
+000022D8	.text:loc_804853C       	mov     edx, [ebp-1Ch]          	EDX=00000003                            	
+000022D8	.text:0804853F          	mov     eax, [ebp+8]            	EAX=FF9AB33F                            	
+000022D8	.text:08048542          	add     eax, edx                	EAX=FF9AB342 AF=1 SF=1                  	
+000022D8	.text:08048544          	movzx   eax, byte ptr [eax]     	EAX=00000000                            	
+000022D8	.text:08048547          	test    al, al                  	AF=0 ZF=1 SF=0                          	
+000022D8	.text:08048549          	jnz     loc_80484BE             	                                        	
+000022D8	.text:0804854F          	jz      short loc_804855E       	                                        	
+000022D8	.text:loc_804855E       	push    ebp                     	ESP=FF9AB2EC                            	
+000022D8	.text:0804855F          	push    edi                     	ESP=FF9AB2E8                            	
+000022D8	.text:08048560          	mov     ebp, edi                	EBP=0000000C                            	
+000022D8	.text:08048562          	sub     ebp, 1E0F3h             	EBP=FFFE1F19 CF=1 PF=0 ZF=0 SF=1        	
+000022D8	.text:08048568          	pop     edi                     	ESP=FF9AB2EC                            	
+000022D8	.text:08048569          	pop     ebp                     	EBP=FF9AB318 ESP=FF9AB2F0               	
+000022D8	.text:0804856A          	sub     esp, 8                  	ESP=FF9AB2E8 CF=0 PF=1 AF=1             	
+000022D8	.text:0804856D          	push    dword ptr [ebp+0Ch]     	ESP=FF9AB2E4                            	
+000022D8	.text:08048570          	push    dword ptr [ebp+8]       	ESP=FF9AB2E0                            	
+000022D8	.text:08048573          	call    loc_8048583             	ESP=FF9AB2DC                            	
+000022D8	.text:loc_8048583       	push    ebp                     	ESP=FF9AB2D8                            	
+000022D8	.text:08048584          	mov     ebp, esp                	EBP=FF9AB2D8                            	
+000022D8	.text:08048586          	push    ebx                     	ESP=FF9AB2D4                            	
+000022D8	.text:08048587          	sub     esp, 40h                	ESP=FF9AB294 PF=0 AF=0                  	
+000022D8	.text:0804858A          	mov     ecx, 0                  	ECX=00000000                            	
+000022D8	.text:0804858F          	mov     eax, 20h ; ' '          	EAX=00000020                            	
+000022D8	.text:08048594          	and     eax, 0FFFFFFFCh         	SF=0                                    	
+000022D8	.text:08048597          	mov     edx, eax                	EDX=00000020                            	
+000022D8	.text:08048599          	mov     eax, 0                  	EAX=00000000                            	
+000022D8	.text:loc_804859E       	mov     [ebp+eax-2Ch], ecx      	                                        	
+000022D8	.text:080485A2          	add     eax, 4                  	EAX=00000004                            	
+000022D8	.text:080485A5          	cmp     eax, edx                	CF=1 PF=1 SF=1                          	
+000022D8	.text:080485A7          	jb      short loc_804859E       	                                        	
+000022D8	.text:loc_804859E       	mov     [ebp+eax-2Ch], ecx      	                                        	
+000022D8	.text:080485A2          	add     eax, 4                  	EAX=00000008 CF=0 PF=0 SF=0             	
+000022D8	.text:080485A5          	cmp     eax, edx                	CF=1 PF=1 SF=1                          	
+000022D8	.text:080485A7          	jb      short loc_804859E       	                                        	
+000022D8	.text:loc_804859E       	mov     [ebp+eax-2Ch], ecx      	                                        	
+000022D8	.text:080485A2          	add     eax, 4                  	EAX=0000000C CF=0 SF=0                  	
+000022D8	.text:080485A5          	cmp     eax, edx                	CF=1 PF=0 SF=1                          	
+000022D8	.text:080485A7          	jb      short loc_804859E       	                                        	
+000022D8	.text:loc_804859E       	mov     [ebp+eax-2Ch], ecx      	                                        	
+000022D8	.text:080485A2          	add     eax, 4                  	EAX=00000010 CF=0 AF=1 SF=0             	
+000022D8	.text:080485A5          	cmp     eax, edx                	CF=1 PF=1 AF=0 SF=1                     	
+000022D8	.text:080485A7          	jb      short loc_804859E       	                                        	
+000022D8	.text:loc_804859E       	mov     [ebp+eax-2Ch], ecx      	                                        	
+000022D8	.text:080485A2          	add     eax, 4                  	EAX=00000014 CF=0 SF=0                  	
+000022D8	.text:080485A5          	cmp     eax, edx                	CF=1 PF=0 SF=1                          	
+000022D8	.text:080485A7          	jb      short loc_804859E       	                                        	
+000022D8	.text:loc_804859E       	mov     [ebp+eax-2Ch], ecx      	                                        	
+000022D8	.text:080485A2          	add     eax, 4                  	EAX=00000018 CF=0 PF=1 SF=0             	
+000022D8	.text:080485A5          	cmp     eax, edx                	CF=1 PF=0 SF=1                          	
+000022D8	.text:080485A7          	jb      short loc_804859E       	                                        	
+000022D8	.text:loc_804859E       	mov     [ebp+eax-2Ch], ecx      	                                        	
+000022D8	.text:080485A2          	add     eax, 4                  	EAX=0000001C CF=0 SF=0                  	
+000022D8	.text:080485A5          	cmp     eax, edx                	CF=1 PF=1 SF=1                          	
+000022D8	.text:080485A7          	jb      short loc_804859E       	                                        	
+000022D8	.text:loc_804859E       	mov     [ebp+eax-2Ch], ecx      	                                        	
+000022D8	.text:080485A2          	add     eax, 4                  	EAX=00000020 CF=0 PF=0 AF=1 SF=0        	
+000022D8	.text:080485A5          	cmp     eax, edx                	PF=1 AF=0 ZF=1                          	
+000022D8	.text:080485A7          	jb      short loc_804859E       	                                        	
+000022D8	.text:080485A9          	mov     dword ptr [ebp-8], 0    	                                        	
+000022D8	.text:080485B0          	mov     dword ptr [ebp-0Ch], 0  	                                        	
+000022D8	.text:080485B7          	mov     byte ptr [ebp-32h], 65h ; 'e'	                                        	
+000022D8	.text:080485BB          	mov     byte ptr [ebp-31h], 72h ; 'r'	                                        	
+000022D8	.text:080485BF          	mov     byte ptr [ebp-30h], 72h ; 'r'	                                        	
+000022D8	.text:080485C3          	mov     byte ptr [ebp-2Fh], 6Fh ; 'o'	                                        	
+000022D8	.text:080485C7          	mov     byte ptr [ebp-2Eh], 72h ; 'r'	                                        	
+000022D8	.text:080485CB          	mov     byte ptr [ebp-2Dh], 0Ah 	                                        	
+000022D8	.text:080485CF          	mov     byte ptr [ebp-38h], 72h ; 'r'	                                        	
+000022D8	.text:080485D3          	mov     byte ptr [ebp-37h], 69h ; 'i'	                                        	
+000022D8	.text:080485D7          	mov     byte ptr [ebp-36h], 67h ; 'g'	                                        	
+000022D8	.text:080485DB          	mov     byte ptr [ebp-35h], 68h ; 'h'	                                        	
+000022D8	.text:080485DF          	mov     byte ptr [ebp-34h], 74h ; 't'	                                        	
+000022D8	.text:080485E3          	mov     byte ptr [ebp-33h], 0Ah 	                                        	
+000022D8	.text:080485E7          	push    ebp                     	ESP=FF9AB290                            	
+000022D8	.text:080485E8          	push    esp                     	ESP=FF9AB28C                            	
+000022D8	.text:080485E9          	jmp     short loc_80485F5       	                                        	
+000022D8	.text:loc_80485F5       	pop     esp                     	ESP=FF9AB290                            	
+000022D8	.text:080485F6          	pop     ebp                     	ESP=FF9AB294                            	
+000022D8	.text:080485F7          	jmp     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=00000000                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	PF=0 ZF=0                               	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=00000073                            	
+000022D8	.text:08048627          	test    al, al                  	                                        	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	                                        	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=00000073                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=00000053 PF=1                       	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=00000053                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=00000000                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2AC SF=1                       	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	PF=0 SF=0                               	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=00000001                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499ED PF=1                       	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=0000008D                            	
+000022D8	.text:08048627          	test    al, al                  	SF=1                                    	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499ED SF=0                       	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=0000008D                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=000000AD PF=0                       	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=000000AD                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=00000001                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2AD SF=1                       	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	SF=0                                    	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=00000002                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499EE PF=1                       	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=000000F2                            	
+000022D8	.text:08048627          	test    al, al                  	PF=0 SF=1                               	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499EE PF=1 SF=0                  	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=000000F2                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=000000D2                            	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=000000D2                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=00000002                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2AE PF=0 SF=1                  	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	PF=1 SF=0                               	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=00000003                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499EF PF=0                       	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=0000004C                            	
+000022D8	.text:08048627          	test    al, al                  	                                        	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499EF                            	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=0000004C                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=0000006C PF=1                       	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=0000006C                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=00000003                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2AF SF=1                       	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	PF=0 SF=0                               	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=00000004                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499F0 PF=1 AF=1                  	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=000000C7                            	
+000022D8	.text:08048627          	test    al, al                  	PF=0 AF=0 SF=1                          	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499F0 PF=1 AF=1 SF=0             	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=000000C7                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=000000E7 AF=0                       	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=000000E7                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=00000004                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2B0 PF=0 AF=1 SF=1             	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	PF=1 AF=0 SF=0                          	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=00000005                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499F1 PF=0 AF=1                  	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=000000D4                            	
+000022D8	.text:08048627          	test    al, al                  	PF=1 AF=0 SF=1                          	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499F1 PF=0 AF=1 SF=0             	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=000000D4                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=000000F4 AF=0                       	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=000000F4                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=00000005                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2B1 PF=1 AF=1 SF=1             	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	AF=0 SF=0                               	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=00000006                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499F2 PF=0 AF=1                  	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=0000007B                            	
+000022D8	.text:08048627          	test    al, al                  	PF=1 AF=0                               	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499F2 PF=0 AF=1                  	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=0000007B                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=0000005B AF=0                       	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=0000005B                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=00000006                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2B2 PF=1 AF=1 SF=1             	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	PF=0 AF=0 SF=0                          	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=00000007                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499F3 PF=1 AF=1                  	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=000000F7                            	
+000022D8	.text:08048627          	test    al, al                  	PF=0 AF=0 SF=1                          	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499F3 PF=1 AF=1 SF=0             	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=000000F7                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=000000D7 AF=0                       	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=000000D7                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=00000007                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2B3 PF=0 AF=1 SF=1             	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	AF=0 SF=0                               	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=00000008                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499F4 AF=1                       	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=00000018                            	
+000022D8	.text:08048627          	test    al, al                  	PF=1 AF=0                               	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499F4 PF=0 AF=1                  	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=00000018                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=00000038 AF=0                       	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=00000038                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=00000008                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2B4 PF=1 AF=1 SF=1             	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	AF=0 SF=0                               	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=00000009                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499F5 AF=1                       	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=00000032                            	
+000022D8	.text:08048627          	test    al, al                  	PF=0 AF=0                               	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499F5 PF=1 AF=1                  	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=00000032                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=00000012 AF=0                       	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=00000012                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=00000009                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2B5 PF=0 AF=1 SF=1             	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	PF=1 AF=0 SF=0                          	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=0000000A                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499F6 AF=1                       	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=00000071                            	
+000022D8	.text:08048627          	test    al, al                  	AF=0                                    	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499F6 AF=1                       	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=00000071                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=00000051 PF=0 AF=0                  	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=00000051                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=0000000A                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2B6 AF=1 SF=1                  	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	AF=0 SF=0                               	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=0000000B                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499F7 AF=1                       	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=0000000D                            	
+000022D8	.text:08048627          	test    al, al                  	AF=0                                    	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499F7 AF=1                       	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=0000000D                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=0000002D PF=1 AF=0                  	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=0000002D                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=0000000B                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2B7 AF=1 SF=1                  	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	AF=0 SF=0                               	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=0000000C                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499F8 PF=0 AF=1                  	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=000000CF                            	
+000022D8	.text:08048627          	test    al, al                  	PF=1 AF=0 SF=1                          	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499F8 PF=0 AF=1 SF=0             	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=000000CF                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=000000EF AF=0                       	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=000000EF                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=0000000C                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2B8 PF=1 AF=1 SF=1             	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	PF=0 AF=0 SF=0                          	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=0000000D                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499F9 PF=1 AF=1                  	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=000000DC                            	
+000022D8	.text:08048627          	test    al, al                  	PF=0 AF=0 SF=1                          	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499F9 PF=1 AF=1 SF=0             	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=000000DC                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=000000FC AF=0                       	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=000000FC                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=0000000D                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2B9 PF=0 AF=1 SF=1             	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	AF=0 SF=0                               	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=0000000E                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499FA PF=1 AF=1                  	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=00000067                            	
+000022D8	.text:08048627          	test    al, al                  	PF=0 AF=0                               	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499FA PF=1 AF=1                  	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=00000067                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=00000047 AF=0                       	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=00000047                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=0000000E                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2BA PF=0 AF=1 SF=1             	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	PF=1 AF=0 SF=0                          	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=0000000F                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499FB PF=0 AF=1                  	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=0000004F                            	
+000022D8	.text:08048627          	test    al, al                  	AF=0                                    	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499FB AF=1                       	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=0000004F                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=0000006F PF=1 AF=0                  	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=0000006F                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=0000000F                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2BB AF=1 SF=1                  	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	PF=0 SF=0                               	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=00000010                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499FC PF=1 AF=0                  	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=0000007F                            	
+000022D8	.text:08048627          	test    al, al                  	PF=0                                    	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499FC PF=1                       	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=0000007F                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=0000005F                            	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=0000005F                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=00000010                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2BC PF=0 SF=1                  	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	PF=1 SF=0                               	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=00000011                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499FD PF=0                       	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=0000000B                            	
+000022D8	.text:08048627          	test    al, al                  	                                        	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499FD                            	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=0000000B                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=0000002B PF=1                       	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=0000002B                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=00000011                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2BD SF=1                       	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	SF=0                                    	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=00000012                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499FE PF=0                       	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=0000006D                            	
+000022D8	.text:08048627          	test    al, al                  	                                        	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:loc_80485F9       	mov     edx, [ebp-8]            	                                        	
+000022D8	.text:080485FC          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:080485FF          	add     eax, edx                	EAX=080499FE                            	
+000022D8	.text:08048601          	movzx   eax, byte ptr [eax]     	EAX=0000006D                            	
+000022D8	.text:08048604          	xor     eax, 20h                	EAX=0000004D PF=1                       	
+000022D8	.text:08048607          	mov     ecx, eax                	ECX=0000004D                            	
+000022D8	.text:08048609          	lea     edx, [ebp-2Ch]          	EDX=FF9AB2AC                            	
+000022D8	.text:0804860C          	mov     eax, [ebp-8]            	EAX=00000012                            	
+000022D8	.text:0804860F          	add     eax, edx                	EAX=FF9AB2BE SF=1                       	
+000022D8	.text:08048611          	mov     [eax], cl               	                                        	
+000022D8	.text:08048613          	add     dword ptr [ebp-8], 1    	PF=0 SF=0                               	
+000022D8	.text:08048617          	jb      short loc_804861C       	                                        	
+000022D8	.text:08048619          	jnb     short loc_804861C       	                                        	
+000022D8	.text:loc_804861C       	mov     edx, [ebp-8]            	EDX=00000013                            	
+000022D8	.text:0804861F          	mov     eax, [ebp+0Ch]          	EAX=080499EC                            	
+000022D8	.text:08048622          	add     eax, edx                	EAX=080499FF PF=1                       	
+000022D8	.text:08048624          	movzx   eax, byte ptr [eax]     	EAX=00000000                            	
+000022D8	.text:08048627          	test    al, al                  	ZF=1                                    	
+000022D8	.text:08048629          	jnz     short loc_80485F9       	                                        	
+000022D8	.text:0804862B          	mov     dword ptr [ebp-8], 0    	                                        	
+000022D8	.text:08048632          	jmp     short loc_8048638       	                                        	
+000022D8	.text:loc_8048638       	mov     edx, [ebp-8]            	EDX=00000000                            	
+000022D8	.text:0804863B          	mov     eax, [ebp+8]            	EAX=FF9AB33F                            	
+000022D8	.text:0804863E          	add     eax, edx                	ZF=0 SF=1                               	
+000022D8	.text:08048640          	movzx   edx, byte ptr [eax]     	EDX=00000031                            	
+000022D8	.text:08048643          	lea     ecx, [ebp-2Ch]          	ECX=FF9AB2AC                            	
+000022D8	.text:08048646          	mov     eax, [ebp-8]            	EAX=00000000                            	
+000022D8	.text:08048649          	add     eax, ecx                	EAX=FF9AB2AC                            	
+000022D8	.text:0804864B          	movzx   eax, byte ptr [eax]     	EAX=00000053                            	
+000022D8	.text:0804864E          	cmp     dl, al                  	CF=1 AF=1                               	
+000022D8	.text:08048650          	jnz     short loc_8048670       	                                        	
+000022D8	.text:loc_8048670       	push    ebp                     	ESP=FF9AB290                            	
+000022D8	.text:08048671          	push    eax                     	ESP=FF9AB28C                            	
+000022D8	.text:08048672          	push    edx                     	ESP=FF9AB288                            	
+000022D8	.text:08048673          	jb      short near ptr loc_8048679+1	                                        	
+000022D8	.text:loc_8048679+1     	mov     eax, edx                	EAX=00000031                            	
+000022D8	.text:loc_8048679+3     	mov     ebp, eax                	EBP=00000031                            	
+000022D8	.text:0804867E          	mov     edx, ebp                	                                        	
+000022D8	.text:08048680          	pop     edx                     	ESP=FF9AB28C                            	
+000022D8	.text:08048681          	pop     eax                     	EAX=00000053 ESP=FF9AB290               	
+000022D8	.text:08048682          	pop     ebp                     	EBP=FF9AB2D8 ESP=FF9AB294               	
+000022D8	.text:08048683          	mov     edx, [ebp-8]            	EDX=00000000                            	
+000022D8	.text:08048686          	mov     eax, [ebp+8]            	EAX=FF9AB33F                            	
+000022D8	.text:08048689          	add     eax, edx                	CF=0 AF=0                               	
+000022D8	.text:0804868B          	movzx   eax, byte ptr [eax]     	EAX=00000031                            	
+000022D8	.text:0804868E          	test    al, al                  	PF=0 SF=0                               	
+000022D8	.text:08048690          	jnz     short loc_80486B7       	                                        	
+000022D8	.text:loc_80486B7       	mov     eax, 4                  	EAX=00000004                            	
+000022D8	.text:080486BC          	mov     ebx, 1                  	EBX=00000001                            	
+000022D8	.text:080486C1          	lea     ecx, [ebp-32h]          	ECX=FF9AB2A6                            	
+000022D8	.text:080486C4          	mov     edx, 6                  	EDX=00000006                            	
+000022D8	.text:080486C9          	int     80h; LINUX - sys_write  	EAX=00000006                            	
+000022D8	.text:loc_80486CB       	add     esp, 40h                	ESP=FF9AB2D4 PF=1 SF=1                  	
+000022D8	.text:080486CE          	pop     ebx                     	EBX=FF9AB341 ESP=FF9AB2D8               	
+000022D8	.text:080486CF          	pop     ebp                     	EBP=FF9AB318 ESP=FF9AB2DC               	
+000022D8	.text:080486D0          	retn                            	ESP=FF9AB2E0                            	
+000022D8	.text:08048578          	add     esp, 10h                	ESP=FF9AB2F0                            	
+000022D8	.text:0804857B          	lea     esp, [ebp-0Ch]          	ESP=FF9AB30C                            	
+000022D8	.text:0804857E          	pop     ebx                     	EBX=00000000 ESP=FF9AB310               	
+000022D8	.text:0804857F          	pop     esi                     	ESI=FF9AB444 ESP=FF9AB314               	
+000022D8	.text:08048580          	pop     edi                     	EDI=FF9AB360 ESP=FF9AB318               	
+000022D8	.text:08048581          	pop     ebp                     	EBP=FF9AB378 ESP=FF9AB31C               	
+000022D8	.text:08048582          	retn                            	ESP=FF9AB320                            	
+000022D8	.text:0804847C          	add     esp, 10h                	ESP=FF9AB330                            	
+000022D8	.text:0804847F          	mov     eax, 0                  	EAX=00000000                            	
+000022D8	.text:08048484          	lea     esp, [ebp-0Ch]          	ESP=FF9AB36C                            	
+000022D8	.text:08048487          	pop     ecx                     	ECX=FF9AB390 ESP=FF9AB370               	
+000022D8	.text:08048488          	pop     ebx                     	EBX=F7F22000 ESP=FF9AB374               	
+000022D8	.text:08048489          	pop     edi                     	EDI=F7F71B80 ESP=FF9AB378               	
+000022D8	.text:0804848A          	pop     ebp                     	EBP=F7F72020 ESP=FF9AB37C               	
+000022D8	.text:0804848B          	lea     esp, [ecx-4]            	ESP=FF9AB38C                            	
+000022D8	.text:0804848E          	retn                            	ESP=FF9AB390                            	
+000022D8	libc.so.6:__libc_init_first+89	add     esp, 10h                	ESP=FF9AB3A0                            	
+000022D8	libc.so.6:loc_F7D1951C  	sub     esp, 0Ch                	ESP=FF9AB394 PF=0 AF=1                  	
+000022D8	libc.so.6:__libc_init_first+8F	push    eax                     	ESP=FF9AB390                            	
