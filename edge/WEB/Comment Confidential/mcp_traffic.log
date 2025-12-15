@@ -1,0 +1,9 @@
+[2025-12-12 11:17:48] client: {"method":"initialize","params":{"protocolVersion":"2025-03-26","capabilities":{},"clientInfo":{"name":"MS Roo Code","version":"0.0.10"}},"jsonrpc":"2.0","id":0}
+[2025-12-12 11:18:11] server: {"jsonrpc":"2.0","id":0,"result":{"protocolVersion":"2024-11-05","capabilities":{"experimental":{},"prompts":{"listChanged":false},"resources":{"subscribe":false,"listChanged":false},"tools":{"listChanged":false}},"serverInfo":{"name":"voice-tools","version":"1.6.0"}}}
+[2025-12-12 11:18:11] client: {"method":"notifications/initialized","jsonrpc":"2.0"}
+[2025-12-12 11:18:11] client: {"method":"tools/list","jsonrpc":"2.0","id":1}
+[2025-12-12 11:18:11] server: {"jsonrpc":"2.0","id":1,"result":{"tools":[{"name":"transcribe_voice","description":"","inputSchema":{"properties":{},"title":"transcribe_voiceArguments","type":"object"}},{"name":"speak_text","description":"Speak the provided text out loud.","inputSchema":{"properties":{"text":{"title":"Text","type":"string"}},"required":["text"],"title":"speak_textArguments","type":"object"}}]}}
+[2025-12-12 11:18:11] client: {"method":"resources/list","jsonrpc":"2.0","id":2}
+[2025-12-12 11:18:11] server: {"jsonrpc":"2.0","id":2,"result":{"resources":[]}}
+[2025-12-12 11:18:11] client: {"method":"resources/templates/list","jsonrpc":"2.0","id":3}
+[2025-12-12 11:18:11] server: {"jsonrpc":"2.0","id":3,"result":{"resourceTemplates":[{"uriTemplate":"voice://greeting/{keyword}","name":"voice_greeting","description":"Return a greeting message based on the provided keyword."}]}}
